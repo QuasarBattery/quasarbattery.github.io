@@ -110,7 +110,7 @@
     "Set up the hardware": "Подготовьте оборудование",
     "Build the Arduino OBI interface and wire it to your battery, following the <1>wiring guide</1>.":
       "Соберите интерфейс Arduino OBI и подключите его к аккумулятору по <1>схеме подключения</1>.",
-    "Connect the board": "Подключите Arduino",
+    "Connect the board": "Подключите диагностическое устройство",
     "Open OBI-1, pick your Arduino, and press Connect. The board resets and identifies itself automatically.":
       "Откройте OBI-1, выберите Arduino и нажмите «Подключить». Плата перезагрузится и определится автоматически.",
     "Read the battery": "Считайте данные аккумулятора",
@@ -127,10 +127,10 @@
     "Results": "Результаты",
     "Battery module": "Модуль аккумулятора",
     "Interface": "Интерфейс",
-    "Reset board on connect": "Перезагружать Arduino при подключении",
-    "Connect the Arduino": "Подключите Arduino",
+    "Reset board on connect": "Рестарт считывателя при подключении",
+    "Connect the Arduino": "Подключите диагностическое устройство",
     "Plug the Arduino into USB (the OBI firmware must already be flashed), then click Connect.":
-      "Подключите Arduino к USB (прошивка OBI уже должна быть залита) и нажмите «Подключить».",
+      "Подключите диагностическое устройство к USB (прошивка OBI уже должна быть залита) и нажмите «Подключить».",
     "Web Serial not supported": "Web Serial не поддерживается",
     "This browser can't access the serial port, so the browser version of OBI-1 can't connect to the Arduino. Use the <1>desktop app</1> instead — it has native serial access and needs no browser setup.":
       "Этот браузер не имеет доступа к последовательному порту, поэтому браузерная версия OBI-1 не может подключиться к Arduino. Используйте <1>настольное приложение</1> — у него собственный доступ к порту, и настройка браузера не нужна.",
