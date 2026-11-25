@@ -46,6 +46,14 @@
 
   document.addEventListener("DOMContentLoaded", addLanguageSwitch);
 
+  /* The "Get started" page (setup.html) is not published on this site (see
+     pages-fork.yml). Hide the menu and hero links to it right away; links
+     inside running text are turned into plain text at the end of this file. */
+  var hideSetup = document.createElement("style");
+  hideSetup.textContent =
+    '.nav-links a[href$="setup.html"], .hero-actions a[href$="setup.html"] { display: none; }';
+  document.head.appendChild(hideSetup);
+
   /* English mode: only the brand changes. */
   var EN = {
     "Open Battery <1>Information</1>": "Quasar<1>Battery</1>",
@@ -544,5 +552,11 @@
   /* Catch anything the observer saw only half-parsed. */
   document.addEventListener("DOMContentLoaded", function () {
     translateElement(document.documentElement);
+
+    var links = document.querySelectorAll('a[href$="setup.html"]');
+    for (var i = 0; i < links.length; i++) {
+      if (links[i].closest(".nav-links, .hero-actions")) continue;
+      links[i].replaceWith(document.createTextNode(links[i].textContent));
+    }
   });
 })();
