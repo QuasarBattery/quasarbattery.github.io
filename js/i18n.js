@@ -68,7 +68,7 @@
     /* ---- navigation, footer, shared ---- */
     "Home": "Главная",
     "Get started": "Начало работы",
-    "Flash firmware": "Прошить плату",
+    "Flash firmware": "Залить прошивку",
     "Download": "Скачать",
     "Open navigation menu": "Открыть меню навигации",
     "Close navigation menu": "Закрыть меню навигации",
@@ -84,18 +84,18 @@
     "Source code": "Исходный код",
     "Download — Open Battery Information": "Скачать — QuasarBattery",
     "Get started · Open Battery Information": "Начало работы · QuasarBattery",
-    "Flash firmware · Open Battery Information": "Прошивка платы · QuasarBattery",
+    "Flash firmware · Open Battery Information": "Прошивка · QuasarBattery",
 
     /* ---- index.html ---- */
     "Diagnose and repair your battery packs from the browser":
       "Диагностика и ремонт аккумуляторов прямо в браузере",
     "Open Battery Information lets you talk to the BMS inside locked or dead power-tool batteries.":
-      "QuasarBattery позволяет общаться с BMS внутри заблокированных или «мёртвых» аккумуляторов электроинструмента.",
+      "QuasarBattery позволяет связаться с BMS заблокированных или переставших работать аккумуляторов электроинструмента.",
     "Diagnose a battery": "Диагностика аккумулятора",
     "Why Open Battery Information?": "Зачем нужен QuasarBattery?",
     "Manufacturers often lock the BMS when a fault is detected. When that protection triggers falsely or the fault is repairable, the pack can be saved instead of thrown away.":
-      "Производители часто блокируют BMS при обнаружении неисправности. Если защита сработала ложно или неисправность устранима, аккумулятор можно восстановить, а не выбрасывать.",
-    "Unlock dead batteries": "Разблокировка «мёртвых» аккумуляторов",
+      "При обнаружении неисправности BMS блокирует аккумулятор — так задумано производителем. Если защита сработала ложно или неисправность устранима, аккумулятор можно восстановить, а не выбрасывать.",
+    "Unlock dead batteries": "Разблокировка аккумуляторов",
     "Read status, charge cycles, and error codes from battery packs whose BMS has locked them out.":
       "Чтение состояния, числа циклов заряда и кодов ошибок из аккумуляторов, заблокированных собственной BMS.",
     "Web Serial, no drivers": "Web Serial, без драйверов",
@@ -110,12 +110,12 @@
     "Set up the hardware": "Подготовьте оборудование",
     "Build the Arduino OBI interface and wire it to your battery, following the <1>wiring guide</1>.":
       "Соберите интерфейс Arduino OBI и подключите его к аккумулятору по <1>схеме подключения</1>.",
-    "Connect the board": "Подключите плату",
+    "Connect the board": "Подключите Arduino",
     "Open OBI-1, pick your Arduino, and press Connect. The board resets and identifies itself automatically.":
       "Откройте OBI-1, выберите Arduino и нажмите «Подключить». Плата перезагрузится и определится автоматически.",
-    "Read the battery": "Считайте аккумулятор",
+    "Read the battery": "Считайте данные аккумулятора",
     "Insert a battery, press Read battery, and see cell voltages, temperatures, charge cycles, and status at a glance.":
-      "Вставьте аккумулятор, нажмите «Считать аккумулятор» — и увидите напряжения ячеек, температуры, число циклов заряда и состояние.",
+      "Вставьте аккумулятор, нажмите «Считать данные» — и увидите напряжения ячеек, температуры, число циклов заряда и состояние.",
 
     /* ---- obi.html + js/obi.js ---- */
     "Diagnose your LXT battery pack in three steps.": "Диагностика аккумулятора LXT за три шага.",
@@ -123,11 +123,11 @@
     "Disconnect": "Отключить",
     "Connected": "Подключено",
     "Not connected": "Не подключено",
-    "Read battery": "Считать аккумулятор",
+    "Read battery": "Считать данные",
     "Results": "Результаты",
     "Battery module": "Модуль аккумулятора",
     "Interface": "Интерфейс",
-    "Reset board on connect": "Сбрасывать плату при подключении",
+    "Reset board on connect": "Сбрасывать Arduino при подключении",
     "Connect the Arduino": "Подключите Arduino",
     "Plug the Arduino into USB (the OBI firmware must already be flashed), then click Connect.":
       "Подключите Arduino к USB (прошивка OBI уже должна быть залита) и нажмите «Подключить».",
@@ -138,7 +138,7 @@
     "Place a battery in the holder so it makes contact with the interface pins.":
       "Установите аккумулятор в держатель так, чтобы он касался контактов интерфейса.",
     "Reads the model, cell voltages, temperatures, charge count and status in one go.":
-      "Считывает модель, напряжения ячеек, температуры, счётчик зарядов и состояние за один раз.",
+      "Считывает модель, напряжения ячеек, температуры, циклы заряда и состояние за один раз.",
     "No results yet.": "Результатов пока нет.",
     "Read again": "Считать ещё раз",
     "Debug log": "Журнал отладки",
@@ -167,8 +167,8 @@
 
     /* ---- js/modules/lxt.js ---- */
     "Function test": "Проверка функций",
-    "LED test ON": "Тест светодиодов ВКЛ",
-    "LED test OFF": "Тест светодиодов ВЫКЛ",
+    "LED test ON": "Включить тест светодиодов",
+    "LED test OFF": "Выключить тест светодиодов",
     "Reset battery": "Сброс аккумулятора",
     "Clear errors": "Сбросить ошибки",
     "Reset battery message": "Сбросить сообщение аккумулятора",
@@ -177,22 +177,22 @@
     "Copy": "Копировать",
     "Clear": "Очистить",
     "Model": "Модель",
-    "Charge count*": "Число зарядов*",
+    "Charge count*": "Циклы заряда*",
     "State": "Состояние",
     "Status code": "Код состояния",
-    "Pack Voltage": "Напряжение батареи",
-    "Cell Voltage Difference": "Разброс напряжений ячеек",
+    "Pack Voltage": "Общее напряжение",
+    "Cell Voltage Difference": "Разбаланс ячеек",
     "Manufacturing date": "Дата производства",
     "Battery message": "Сообщение аккумулятора",
     "Capacity": "Ёмкость",
-    "Battery type": "Тип аккумулятора",
+    "Battery type": "Код типа аккумулятора",
     "LOCKED": "ЗАБЛОКИРОВАН",
-    "UNLOCKED": "РАЗБЛОКИРОВАН",
+    "UNLOCKED": "НЕ ЗАБЛОКИРОВАН",
     "Error": "Ошибка",
     "No interface selected. Please select and connect an interface from the sidebar.":
       "Интерфейс не выбран. Выберите и подключите интерфейс.",
     "Limited": "Ограниченная поддержка",
-    "This model only supports diagnostics": "Эта модель поддерживает только диагностику",
+    "This model only supports diagnostics": "Для этой модели доступна только диагностика (сброс ошибок не поддерживается)",
     "Could not communicate with the battery:": "Нет связи с аккумулятором:",
     "Data Error": "Ошибка данных",
     "Received an unexpected response while reading battery info:":
@@ -205,7 +205,7 @@
     "Lost communication while turning LEDs on:": "Потеряна связь при включении светодиодов:",
     "LED test off": "Тест светодиодов выключен",
     "Lost communication while turning LEDs off:": "Потеряна связь при выключении светодиодов:",
-    "Battery errors cleared": "Ошибки аккумулятора сброшены",
+    "Battery errors cleared": "Команда сброса ошибок отправлена — считайте данные заново",
     "Lost communication while resetting errors:": "Потеряна связь при сбросе ошибок:",
     "Not Implemented": "Не реализовано",
     "This feature is currently under development.": "Эта функция находится в разработке.",
@@ -232,7 +232,7 @@
       "Web Serial работает в этих браузерах на компьютере (Firefox 151+). Safari не поддерживается.",
     "An Arduino Uno or ESP32-C3 with a USB cable": "Arduino Uno или ESP32-C3 с USB-кабелем",
     "A genuine or compatible Uno with the optiboot bootloader, or an ESP32-C3 SuperMini. The uploader flashes either automatically.":
-      "Оригинальная или совместимая Uno с загрузчиком optiboot либо ESP32-C3 SuperMini. Загрузчик прошивки автоматически прошьёт любую из них.",
+      "Оригинальная или совместимая Uno с загрузчиком optiboot либо ESP32-C3 SuperMini. Страница прошивки автоматически прошьёт любую из них.",
     "A few jumper wires and resistors": "Несколько проводов-перемычек и резисторов",
     "The Arduino OBI interface is just a one-wire link with two pull-up resistors — see the schematic below.":
       "Интерфейс Arduino OBI — это просто однопроводная линия с двумя подтягивающими резисторами, см. схему ниже.",
@@ -250,20 +250,19 @@
     "Signal": "Сигнал",
     "Pin": "Вывод",
     "Notes": "Примечания",
-    "Data (one-wire)": "Данные (one-wire)",
+    "Data (one-wire)": "Данные (1-Wire)",
     "Pulled up to 5 V through the schematic's resistor.": "Подтянут к 5 В через резистор по схеме.",
-    "Enable (EN)": "Разрешение (EN)",
     "Drives the battery's enable line when a command runs.":
-      "Управляет линией разрешения аккумулятора во время выполнения команды.",
+      "Управляет линией Enable аккумулятора во время выполнения команды.",
     "Power": "Питание",
     "5 V / GND": "5 В / GND",
     "3.3 V / GND": "3,3 В / GND",
     "The interface is powered from the Uno's 5 V rail.": "Интерфейс питается от линии 5 В платы Uno.",
     "Pulled up to 3.3 V — never 5 V.": "Подтянут к 3,3 В — ни в коем случае не к 5 В.",
-    "Drives the battery's enable line.": "Управляет линией разрешения аккумулятора.",
+    "Drives the battery's enable line.": "Управляет линией Enable аккумулятора.",
     "The interface is powered from the ESP's 3.3 V rail.": "Интерфейс питается от линии 3,3 В платы ESP.",
     "On the battery side, connect the interface's <1>data</1> and <2>enable</2> wires to the corresponding pads of your pack's communication connector (typically labelled D1 and D2) and a common <3>GND</3>. Exact pad positions vary between packs — check the upstream documentation for your model.":
-      "Со стороны аккумулятора подключите провода <1>данных</1> и <2>разрешения</2> интерфейса к соответствующим контактам разъёма связи аккумулятора (обычно обозначены D1 и D2), а также общий <3>GND</3>. Точное расположение контактов зависит от модели — сверьтесь с документацией исходного проекта.",
+      "Со стороны аккумулятора подключите провода <1>данных</1> и <2>Enable</2> интерфейса к соответствующим контактам разъёма связи аккумулятора (обычно обозначены D1 и D2), а также общий <3>GND</3>. Точное расположение контактов зависит от модели — сверьтесь с документацией исходного проекта.",
     "Read this before you wire anything": "Прочтите, прежде чем что-либо подключать",
     "On an ESP32-C3 the pull-up resistors must be connected to the <1>3.3 V</1> pin — connecting them to 5 V will fry the GPIOs and destroy the module.":
       "На ESP32-C3 подтягивающие резисторы нужно подключать к выводу <1>3,3 В</1> — подключение к 5 В сожжёт GPIO и выведет модуль из строя.",
@@ -276,9 +275,9 @@
       "Когда интерфейс собран и подключён, до диагностики остаются считаные минуты.",
     "Plug your board into USB and flash the Open Battery Information firmware straight from the browser — no Arduino IDE needed.":
       "Подключите плату к USB и залейте прошивку OBI прямо из браузера — Arduino IDE не нужна.",
-    "Open the uploader →": "Открыть загрузчик прошивки →",
+    "Open the uploader →": "Открыть страницу прошивки →",
     "Open OBI-1, pick your board, and press Connect. It resets and identifies itself automatically.":
-      "Откройте OBI-1, выберите плату и нажмите «Подключить». Она перезагрузится и определится автоматически.",
+      "Откройте OBI-1, выберите свою плату Arduino или ESP32 и нажмите «Подключить». Она перезагрузится и определится автоматически.",
     "Open OBI-1 →": "Открыть OBI-1 →",
 
     /* ---- download.html ---- */
@@ -338,7 +337,7 @@
       "Установщики собираются в CI для основных платформ: Windows x64, macOS (Intel и Apple Silicon) и Linux x64. Если нужно что-то другое, создайте issue или соберите из исходников — это одна команда.",
     "Do I still need to flash the Arduino firmware?": "Нужно ли всё равно прошивать Arduino?",
     'Yes. The desktop app bundles the same <1>firmware uploader</1> as the web version — open the "Flash firmware" page inside the app, plug in the Uno and flash. The newest firmware ships with each release.':
-      "Да. В настольное приложение встроен тот же <1>загрузчик прошивки</1>, что и в веб-версии: откройте страницу «Прошить плату» в приложении, подключите Uno и прошейте. С каждым релизом поставляется самая свежая прошивка.",
+      "Да. В настольное приложение встроена та же <1>страница прошивки</1>, что и в веб-версии: откройте страницу «Залить прошивку» в приложении, подключите Uno и прошейте. С каждым релизом поставляется самая свежая прошивка.",
     "How are the installers built?": "Как собираются установщики?",
     "Every tagged release triggers a GitHub Actions workflow that packages the app on Windows, macOS and Linux runners and attaches the installers to the release. Build logs are public.":
       "Каждый релиз с тегом запускает workflow GitHub Actions, который собирает приложение на Windows, macOS и Linux и прикрепляет установщики к релизу. Журналы сборки открыты.",
@@ -361,7 +360,7 @@
     "Uses firmware/uno.hex from this site, built automatically from the ArduinoOBI source.":
       "Используется firmware/uno.hex с этого сайта, собранный автоматически из исходников ArduinoOBI.",
     "Uses firmware/uno.hex from this site, built automatically from the ArduinoOBI source. The same image works for the Uno and for the ATmega328P Nano — the uploader tries the current 115200 baud bootloader first, then the old 57600 baud one.":
-      "Используется firmware/uno.hex с этого сайта, собранный автоматически из исходников ArduinoOBI. Один и тот же образ подходит для Uno и для Nano на ATmega328P — загрузчик сначала пробует современный бутлоадер на 115200 бод, затем старый на 57600 бод.",
+      "Используется firmware/uno.hex с этого сайта, собранный автоматически из исходников ArduinoOBI. Один и тот же образ подходит для Uno и для Nano на ATmega328P — программа прошивки сначала пробует современный загрузчик на 115200 бод, затем старый на 57600 бод.",
     "Uses firmware/esp32.bin (merged bootloader + partitions + app) built from the ArduinoOBI source for the ESP32-C3.":
       "Используется firmware/esp32.bin (объединённые загрузчик + разделы + приложение), собранный из исходников ArduinoOBI для ESP32-C3.",
     "Log": "Журнал",
