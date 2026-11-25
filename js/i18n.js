@@ -127,7 +127,7 @@
     "Results": "Результаты",
     "Battery module": "Модуль аккумулятора",
     "Interface": "Интерфейс",
-    "Reset board on connect": "Сбрасывать Arduino при подключении",
+    "Reset board on connect": "Перезагружать Arduino при подключении",
     "Connect the Arduino": "Подключите Arduino",
     "Plug the Arduino into USB (the OBI firmware must already be flashed), then click Connect.":
       "Подключите Arduino к USB (прошивка OBI уже должна быть залита) и нажмите «Подключить».",
