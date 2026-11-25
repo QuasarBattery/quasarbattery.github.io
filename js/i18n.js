@@ -100,7 +100,7 @@
       "Чтение состояния, числа циклов заряда и кодов ошибок из аккумуляторов, заблокированных собственной BMS.",
     "Web Serial, no drivers": "Web Serial, без драйверов",
     "Talks to your Arduino over the Web Serial API. No drivers, no cables beyond USB, no installs.":
-      "Связь с Arduino через Web Serial API. Никаких драйверов, никаких кабелей кроме USB, никакой установки.",
+      "Связь с диагностическим устройством через Web Serial API. Никаких драйверов, никаких кабелей кроме USB, никакой установки.",
     "Private by design": "Приватность по умолчанию",
     "Everything runs locally in your browser tab. No accounts, no telemetry, no data leaves your machine.":
       "Всё работает локально во вкладке браузера. Без учётных записей, без телеметрии, данные не покидают ваш компьютер.",
@@ -112,7 +112,7 @@
       "Соберите интерфейс Arduino OBI и подключите его к аккумулятору по <1>схеме подключения</1>.",
     "Connect the board": "Подключите диагностическое устройство",
     "Open OBI-1, pick your Arduino, and press Connect. The board resets and identifies itself automatically.":
-      "Откройте OBI-1, выберите Arduino и нажмите «Подключить». Плата перезагрузится и определится автоматически.",
+      "Откройте OBI-1, выберите диагностическое устройство и нажмите «Подключить». Оно перезагрузится и определится автоматически.",
     "Read the battery": "Считайте данные аккумулятора",
     "Insert a battery, press Read battery, and see cell voltages, temperatures, charge cycles, and status at a glance.":
       "Вставьте аккумулятор, нажмите «Считать данные» — и увидите напряжения ячеек, температуры, число циклов заряда и состояние.",
@@ -163,7 +163,7 @@
     "Connection Error": "Ошибка соединения",
     "Could not open the serial port:": "Не удалось открыть последовательный порт:",
     "Serial port is not open. Please connect to the Arduino first.":
-      "Последовательный порт не открыт. Сначала подключитесь к Arduino.",
+      "Последовательный порт не открыт. Сначала подключите диагностическое устройство.",
 
     /* ---- js/modules/lxt.js ---- */
     "Function test": "Проверка функций",
@@ -351,7 +351,7 @@
     "Your board": "Ваша плата",
     "ATmega328P · optiboot @ 115200/57600 baud": "ATmega328P · optiboot, 115200/57600 бод",
     "SuperMini · esptool @ 115200 baud": "SuperMini · esptool, 115200 бод",
-    "Ready. Plug in your Arduino and press the button.": "Готово к работе. Подключите Arduino и нажмите кнопку.",
+    "Ready. Plug in your Arduino and press the button.": "Готово к работе. Подключите диагностическое устройство и нажмите кнопку.",
     "Continue to OBI-1 →": "Перейти к OBI-1 →",
     "Advanced": "Дополнительно",
     "Firmware image": "Образ прошивки",
@@ -398,7 +398,7 @@
     [/^(.*) Check that the port is not in use by another application\.$/,
       "$1\n\nПроверьте, что порт не занят другой программой."],
     [/^Failed to get a valid response after (\d+) attempts\. Ensure the Arduino is connected and a battery is inserted\.$/,
-      "Не удалось получить корректный ответ за $1 попыток. Убедитесь, что Arduino подключена и аккумулятор вставлен."],
+      "Не удалось получить корректный ответ за $1 попыток. Убедитесь, что диагностическое устройство подключено и аккумулятор вставлен."],
     [/^Battery is present but the model is not supported\. Last error: (.*)$/,
       "Аккумулятор обнаружен, но модель не поддерживается.\n\nПоследняя ошибка: $1"],
     [/^Cell (\d) Voltage$/, "Напряжение ячейки $1"],
