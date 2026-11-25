@@ -117,7 +117,7 @@
       "Соберите простой интерфейс и считайте аккумулятор за три шага.",
     "Set up the hardware": "Подготовьте оборудование",
     "Build the Arduino OBI interface and wire it to your battery, following the <1>wiring guide</1>.":
-      "Соберите интерфейс Arduino OBI и подключите его к аккумулятору по <1>схеме подключения</1>.",
+      "Подключите диагностическое устройство к аккумулятору по <1>схеме подключения</1>.",
     "Connect the board": "Подключите диагностическое устройство",
     "Open OBI-1, pick your Arduino, and press Connect. The board resets and identifies itself automatically.":
       "Откройте OBI-1, выберите диагностическое устройство и нажмите «Подключить». Оно перезагрузится и определится автоматически.",
